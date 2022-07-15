@@ -24,7 +24,7 @@ public class Testparallel {
 
     DesiredCapabilities capabilities = new DesiredCapabilities();
     capabilities.setCapability("browserName", "chrome");
-    capabilities.setCapability("browserVersion", "latest");
+    capabilities.setCapability("browserVersion", "103.0");
     capabilities.setCapability("enableVNC", true);
     driver = new RemoteWebDriver(
         URI.create("http://192.168.1.64:4444/wd/hub").toURL(),
