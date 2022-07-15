@@ -1,6 +1,6 @@
 pipeline {
     agent {
-      node {'maven'}
+      node {label 'maven'}
     }
     stages {
         stage('Checkout'){
