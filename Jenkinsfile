@@ -1,5 +1,7 @@
 pipeline {
-    agent {'maven'}
+    agent {
+      node {'maven'}
+    }
     stages {
         stage('Checkout'){
         dir('tests_selenoid'){
