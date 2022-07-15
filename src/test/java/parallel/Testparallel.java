@@ -48,7 +48,7 @@ public class Testparallel {
   }
 
   @Test
-  public void test9() throws InterruptedException {
+  public void test10() throws InterruptedException {
     driver.get("https://ya.ru");
 
     Thread.sleep(10000);
