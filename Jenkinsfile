@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage ('Load Groovy Script') {
           steps {
-              load '/jobs/configs/pipeline/test.pipeline.groovy'
+              load 'test.groovy'
           }
      }
 }
