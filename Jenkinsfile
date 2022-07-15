@@ -20,15 +20,6 @@ pipeline {
              """
             } 
         }
-       #  stage ('Report'){
-       #    allure([
-        #    includeProperties: false,
-         #   properties: [],
-          #  reportBuildPolicy: 'ALWAYS',
-           # results: [[path: 'target/allure-results']]
-            #   ])
-
-
-      #}
+      
      }
 }
