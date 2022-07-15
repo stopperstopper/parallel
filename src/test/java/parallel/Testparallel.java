@@ -20,13 +20,7 @@ public class Testparallel {
 
   @Before
   public void init() throws MalformedURLException {
-//    ChromeOptions chromeOptions = new ChromeOptions();
-//    chromeOptions.setCapability("browserName", "chrome");
-//    chromeOptions.setCapability("se:name", "My simple test");
-//
-//    chromeOptions.setCapability("se:sampleMetadata", "Sample metadata value");
-//
-//    driver = new RemoteWebDriver(new URL("http://10.10.57.94:4444/wd/hub"), chromeOptions);
+
 
     DesiredCapabilities capabilities = new DesiredCapabilities();
     capabilities.setCapability("browserName", "chrome");
