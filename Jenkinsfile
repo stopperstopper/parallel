@@ -10,7 +10,7 @@ pipeline {
         
         stage ('Run tests'){
             steps {sh """
-             mvn clean test -Dbrowser=chrome -Dbrowser_version=103.0}
+             mvn clean test}
              """
             } 
         }
