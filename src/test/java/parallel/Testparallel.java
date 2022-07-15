@@ -27,8 +27,7 @@ public class Testparallel {
     capabilities.setCapability("browserVersion", "103.0");
     capabilities.setCapability("enableVNC", true);
     driver = new RemoteWebDriver(
-        URI.create("http://192.168.1.64:4444" +
-                "/wd/hub").toURL(),
+        URI.create("http://192.168.1.64:4444/wd/hub").toURL(),
         capabilities
     );
   }
@@ -41,56 +40,8 @@ public class Testparallel {
     }
   }
 
-  @Test
-  public void test1() throws InterruptedException {
-    driver.get("https://ya.ru");
-
-    Thread.sleep(10000);
-  }
-
-  @Test
-  public void test2() throws InterruptedException {
-    driver.get("https://ya.ru");
-
-    Thread.sleep(10000);
-  }
-
-  @Test
-  public void test3() throws InterruptedException {
-    driver.get("https://ya.ru");
-
-    Thread.sleep(10000);
-  }
-
-  @Test
-  public void test4() throws InterruptedException {
-    driver.get("https://ya.ru");
-
-    Thread.sleep(10000);
-  }
-
-  @Test
-  public void test5() throws InterruptedException {
-    driver.get("https://ya.ru");
-
-    Thread.sleep(10000);
-  }
-
-  @Test
-  public void test6() throws InterruptedException {
-    driver.get("https://ya.ru");
-    Thread.sleep(10000);
-  }
-
-  @Test
-  public void test7() throws InterruptedException {
-    driver.get("https://ya.ru");
-
-    Thread.sleep(10000);
-  }
-
-  @Test
-  public void test8() throws InterruptedException {
+ @Test
+  public void test9() throws InterruptedException {
     driver.get("https://ya.ru");
 
     Thread.sleep(10000);
