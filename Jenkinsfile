@@ -18,7 +18,7 @@ pipeline {
              mvn clean tests-Dbrowser=chrome -Dbase.url=${env.BASE_URL}
              """
       } 
-         stage 
+         stage ('Report'){
            allure([
             includeProperties: false,
             properties: [],
