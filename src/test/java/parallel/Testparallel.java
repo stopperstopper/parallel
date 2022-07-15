@@ -44,14 +44,14 @@ public class Testparallel {
   public void test9() throws InterruptedException {
     driver.get("https://ya.ru");
 
-    Thread.sleep(10000);
+    Thread.sleep(1000);
   }
 
   @Test
   public void test10() throws InterruptedException {
     driver.get("https://ya.ru");
 
-    Thread.sleep(10000);
+    Thread.sleep(1000);
   }
 
 }
