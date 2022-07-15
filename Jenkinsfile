@@ -11,7 +11,7 @@ pipeline {
         
         stage ('Run tests'){
             steps {sh """
-             mvn clean test -Dbrowser=chrome -Dbase.url=${env.BASE_URL}
+             mvn clean test -Dbrowser_name=$BROWSER_NAME -Dbrowser_version=$BROWSER_VERSION}
              """
             } 
         }
