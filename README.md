@@ -1,5 +1,5 @@
-## переписать в архиве job-builder.ini
-//ignore_cache=true
+## дописать в архиве job-builder.ini
+ignore_cache=true
 
 # //установка докера
 sudo apt update
