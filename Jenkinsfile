@@ -14,18 +14,12 @@ pipeline {
              """ 
                   } }
           
-          post {
-                always {
-                  script {
-                    // Формирование отчета
-                    allure([
-                      includeProperties: false,
-                      jdk: '',
-                      properties: [],
-                      reportBuildPolicy: 'ALWAYS',
-                      results: [[path: 'target/allure-results']]
-                    ])
-                    println('allure report created')
-                  }}}
+         post {
+        always {
+               sh """
+               chmod -R o+xw allure-results
+               allure includeProperties: false, jdk: '', results: [[path: 'allure-results']]
+               """
+        }}
      }
 }
