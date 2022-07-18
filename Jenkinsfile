@@ -12,8 +12,15 @@ pipeline {
             steps {sh """
              mvn clean test
              """ 
-            } 
+                  } }
+          stage ('Report'){
+              steps {allure([
+            includeProperties: false,
+            properties: [],
+            reportBuildPolicy: 'ALWAYS',
+            results: [[path: 'target/allure-results']]
+         ])
         }
-      
+          }
      }
 }
