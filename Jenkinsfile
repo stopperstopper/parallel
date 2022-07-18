@@ -14,13 +14,18 @@ pipeline {
              """ 
                   } }
           stage ('Report'){
-              steps {allure([
-            includeProperties: false,
-            properties: [],
-            reportBuildPolicy: 'ALWAYS',
-            results: [[path: 'target/allure-results']]
-         ])
-        }
-          }
+            steps post {
+                always {
+                  script {
+                    // Формирование отчета
+                    allure([
+                      includeProperties: false,
+                      jdk: '',
+                      properties: [],
+                      reportBuildPolicy: 'ALWAYS',
+                      results: [[path: 'target/allure-results']]
+                    ])
+                    println('allure report created')
+                  }}}}
      }
 }
