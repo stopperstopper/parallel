@@ -42,16 +42,16 @@ public class Testparallel {
 
  @Test
   public void test9() throws InterruptedException {
-    driver.get("https://ya.ru");
+    driver.get("https://otus.ru");
 
-    Thread.sleep(1000);
+    Thread.sleep(3000);
   }
 
   @Test
   public void test10() throws InterruptedException {
-    driver.get("https://ya.ru");
+    driver.get("https://otus.ru");
 
-    Thread.sleep(1000);
+    Thread.sleep(3000);
   }
 
 }
