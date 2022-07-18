@@ -12,7 +12,7 @@ pipeline {
             steps {sh """
              mvn clean test
              """ 
-                  } }
+                  } }}
           
          post {
         always {
@@ -21,5 +21,5 @@ pipeline {
                allure includeProperties: false, jdk: '', results: [[path: 'allure-results']]
                """
         }}
-     }
+     
 }
