@@ -13,8 +13,8 @@ pipeline {
              mvn clean test
              """ 
                   } }
-          stage ('Report'){
-            steps post {
+          
+          post {
                 always {
                   script {
                     // Формирование отчета
@@ -26,6 +26,6 @@ pipeline {
                       results: [[path: 'target/allure-results']]
                     ])
                     println('allure report created')
-                  }}}}
+                  }}}
      }
 }
